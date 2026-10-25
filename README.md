@@ -117,7 +117,3 @@ Flight fare dataset (Kaggle, "Flight Fare Prediction" – MachineHack), covering
 **Vaishnavi Wangalwar**
 [GitHub](https://github.com/vaishnaviwangalwar-cpu)
 [Website](https://flightpriceprediction-vaishnavi.streamlit.app/)
-
-## License
-
-This project is licensed under the MIT License.
