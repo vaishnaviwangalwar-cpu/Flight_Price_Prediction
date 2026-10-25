@@ -1,6 +1,7 @@
 # Flight Price Prediction
 
 A machine learning web app that estimates Indian domestic flight ticket prices. It uses a **Random Forest Regressor** trained on historical flight data and a **Streamlit** interface for interactive predictions.
+<img width="1920" height="1080" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/ff8df5be-28a2-4706-8722-f30835ab726a" />
 
 ## Features
 
@@ -13,6 +14,7 @@ A machine learning web app that estimates Indian domestic flight ticket prices. 
 - Python
 - pandas, NumPy
 - scikit-learn
+- Streamlit
 - openpyxl (to read the `.xlsx` dataset)
 
 ## Project Structure
@@ -114,7 +116,8 @@ Flight fare dataset (Kaggle, "Flight Fare Prediction" – MachineHack), covering
 
 **Vaishnavi Wangalwar**
 [GitHub](https://github.com/vaishnaviwangalwar-cpu)
+[Website](https://flightpriceprediction-vaishnavi.streamlit.app/)
 
 ## License
 
-This project is licensed under the MIT License. Add a `LICENSE` file to the repo to make it official.
+This project is licensed under the MIT License.
