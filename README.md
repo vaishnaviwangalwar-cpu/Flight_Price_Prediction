@@ -7,14 +7,12 @@ A machine learning web app that estimates Indian domestic flight ticket prices. 
 - Predicts ticket price (in ₹) from airline, route, date, timings, duration and number of stops
 - Random Forest model (600 trees, max depth 25) with an R² of about 0.81
 - Feature engineering pipeline for dates, times and durations
-- Simple Streamlit UI, no ML knowledge needed to use it
 
 ## Tech Stack
 
 - Python
 - pandas, NumPy
 - scikit-learn
-- Streamlit
 - openpyxl (to read the `.xlsx` dataset)
 
 ## Project Structure
@@ -41,35 +39,11 @@ Flight_Price_Prediction/
 5. **Evaluation:** the script reports MAE, MSE, RMSE, R² and adjusted R².
 
 ## Workflow
-
 ```mermaid
-flowchart TD
-    A[📄 Raw Dataset<br/>Data_Train.xlsx] --> B[🧹 Clean Data<br/>drop missing values]
-    B --> C[⚙️ Feature Engineering<br/>date, time, duration, stops]
-    C --> D[🔢 One-Hot Encoding<br/>Airline, Source, Destination]
-    D --> E[🌲 Train Random Forest<br/>600 trees, depth 25]
-    E --> F[(💾 finalized_model.pkl)]
-
-    G[🧑 User Input<br/>Streamlit UI] --> H[🔧 Build Feature Vector]
-    H --> I[🤖 Load Saved Model]
-    F --> I
-    I --> J[💰 Predicted Price in ₹]
-
-    subgraph Training
-        A
-        B
-        C
-        D
-        E
-        F
-    end
-
-    subgraph Prediction
-        G
-        H
-        I
-        J
-    end
+flowchart LR
+    A[Dataset] --> B[Clean &<br/>Feature Engineering] --> C[Train<br/>Random Forest] --> D[(Saved Model)]
+    E[User Input] --> F[Streamlit App] --> D
+    D --> G[Predicted Price ₹]
 ```
 
 ## Installation
@@ -140,7 +114,6 @@ Flight fare dataset (Kaggle, "Flight Fare Prediction" – MachineHack), covering
 
 **Vaishnavi Wangalwar**
 [GitHub](https://github.com/vaishnaviwangalwar-cpu)
-[Website](https://flightpriceprediction-vaishnavi.streamlit.app/)
 
 ## License
 
