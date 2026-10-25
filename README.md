@@ -20,4 +20,4 @@ Input your desired parameters, including travel time, destination, and date.
 Obtain the corresponding predicted price.
 
 
-WEBSITE URL: https://machine-learning-project-vaishnavi.streamlit.app/
+WEBSITE URL: 
